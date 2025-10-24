@@ -138,6 +138,17 @@ Best practice: Do not use the AWS account root user except when necessary. Acces
 
 <br/>
 
+| Feature                  | **Identity-Based Policy**            | **Resource-Based Policy**                          |
+| ------------------------ | ------------------------------------ | -------------------------------------------------- |
+| **Attached To**          | IAM user, group, or role             | AWS resource (e.g., S3 bucket)                     |
+| **Specifies**            | What actions an identity can perform | Who can access the resource and what they can do   |
+| **Relationship**         | Many-to-many                         | One policy per resource (inline)                   |
+| **Cross-Account Access** | Requires role assumption             | Directly supported                                 |
+| **Example Use Case**     | Give a developer access to EC2       | Allow another AWS account access to your S3 bucket |
+| **Common Services**      | All services                         | S3, SQS, SNS, Lambda, etc.                         |
+
+
+
 ## Section 4: Securing Accounts
 
 ### **AWS Organizations**
