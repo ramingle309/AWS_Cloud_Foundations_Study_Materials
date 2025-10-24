@@ -63,6 +63,10 @@ AWS Infrastructure Features:
 
 <br/>
 
+
+<img width="974" height="594" alt="image" src="https://github.com/user-attachments/assets/933a0311-a5f8-4145-a365-0a8f630ac468" />
+
+
 ## Section 2: AWS Services and Service Category Overview
 
 ### **Foundation Services**
