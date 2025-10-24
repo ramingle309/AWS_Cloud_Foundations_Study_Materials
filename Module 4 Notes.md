@@ -108,6 +108,21 @@ AWS Identity and Access Management (IAM) can be used to:
      - The policies are inline only, not managed. An inline policy is assigned to just one User or Group. Inline Policies are typically used to apply permissions for one-off situations.
      - Resource-based policies are supported only by some AWS services
 
+
+
+| Feature                  | **Identity-Based Policy**            | **Resource-Based Policy**                          |
+| ------------------------ | ------------------------------------ | -------------------------------------------------- |
+| **Attached To**          | IAM user, group, or role             | AWS resource (e.g., S3 bucket)                     |
+| **Specifies**            | What actions an identity can perform | Who can access the resource and what they can do   |
+| **Relationship**         | Many-to-many                         | One policy per resource (inline)                   |
+| **Cross-Account Access** | Requires role assumption             | Directly supported                                 |
+| **Example Use Case**     | Give a developer access to EC2       | Allow another AWS account access to your S3 bucket |
+| **Common Services**      | All services                         | S3, SQS, SNS, Lambda, etc.                         |
+
+
+
+
+
 **IAM Role:** Useful mechanism to grant a set of permissions for making AWS service requests.
 
 - Similar to an IAM user: Attach permissions policies to it
@@ -138,14 +153,6 @@ Best practice: Do not use the AWS account root user except when necessary. Acces
 
 <br/>
 
-| Feature                  | **Identity-Based Policy**            | **Resource-Based Policy**                          |
-| ------------------------ | ------------------------------------ | -------------------------------------------------- |
-| **Attached To**          | IAM user, group, or role             | AWS resource (e.g., S3 bucket)                     |
-| **Specifies**            | What actions an identity can perform | Who can access the resource and what they can do   |
-| **Relationship**         | Many-to-many                         | One policy per resource (inline)                   |
-| **Cross-Account Access** | Requires role assumption             | Directly supported                                 |
-| **Example Use Case**     | Give a developer access to EC2       | Allow another AWS account access to your S3 bucket |
-| **Common Services**      | All services                         | S3, SQS, SNS, Lambda, etc.                         |
 
 
 
