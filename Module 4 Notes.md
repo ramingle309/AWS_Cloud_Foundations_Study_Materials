@@ -236,3 +236,6 @@ Compliance programs can be broadly categorized:
 <br/>
 
 [Knowledge Check](https://www.aws.training/Details/Curriculum?transcriptid=-NscDQNnt0KwQEi-zYfB8Q2&id=43078#modules)
+
+
+My notes of lab
