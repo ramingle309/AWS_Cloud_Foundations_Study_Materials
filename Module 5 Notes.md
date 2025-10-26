@@ -73,6 +73,11 @@
 - CIDR blocks of subnets cannot overlap
 - Each CIDR block has 5 reserved addresses for: network address, internal communication, DNS resolution, future use, and network broadcast address
 
+
+<img width="660" height="511" alt="image" src="https://github.com/user-attachments/assets/48fa4bf2-29d5-4079-9a41-38de7d8aceab" />
+
+
+
 ### **Elastic Network Interface**
 
 - An Elastic IP address is a static IPv4 address, associated with your AWS account, designed for dynamic cloud computing. You can mask the failure of an instance or software by rapidly remapping the address to another instance in your account.
