@@ -92,6 +92,21 @@
 - Its attributes follow when it is reattached to a new instance.
 - Each instance in your VPC has a default network interface that is assigned a private IPv4 address from the IPv4 address range of your VPC
 
+🧩 Definition:
+
+An Elastic Network Interface (ENI) is a virtual network card that you can attach to an EC2 instance in your VPC (Virtual Private Cloud).
+It defines how your instance connects to the network — just like a network adapter in a physical computer.
+
+| Feature                  | Description                                                                                                                                   |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Attach/Detach**        | You can attach an ENI to an instance and later detach it to attach to another instance — this helps in **redirecting traffic** easily.        |
+| **Persistence**          | When you move (reattach) an ENI to a new instance, **all its attributes stay the same**, like IP addresses, MAC address, and security groups. |
+| **Default ENI**          | Every instance **automatically gets one ENI** called the **primary network interface (eth0)**.                                                |
+| **Private IPv4 Address** | This default ENI is given a **private IPv4 address** from the **VPC’s IP range**.                                                             |
+| **Public IP Option**     | The ENI can optionally have a **public IPv4 or Elastic IP** attached for internet access.                                                     |
+| **Multiple ENIs**        | You can attach **more than one ENI** to an instance (depending on the instance type), allowing it to connect to multiple subnets or networks. |
+
+
 ### **Routes and Route Tables**
 
 - The route table controls routing for the subnet
