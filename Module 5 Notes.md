@@ -119,6 +119,18 @@ It defines how your instance connects to the network — just like a network ada
 
 ## Section 3: VPC Networking
 
+<img width="1697" height="943" alt="image" src="https://github.com/user-attachments/assets/e436a550-4c1b-40ec-b362-bad5c8998d81" />
+
+🔒 NAT Gateway (Network Address Translation Gateway)
+🔹 Definition:
+
+A NAT Gateway is an AWS-managed service that allows instances in a private subnet to connect to the Internet (for example, to download updates or access APIs),
+but it prevents the Internet from initiating a connection back to those instances.
+
+✅ In short: It provides outbound Internet access for private subnets, while keeping them secure and hidden from incoming Internet traffic.
+
+
+
 ### **Internet Gateway**
 
 A scalable, redundant, and highly available VPC component that allows communication between instances in your VPC and the public internet. An internet gateway serves two purposes:
@@ -127,6 +139,8 @@ A scalable, redundant, and highly available VPC component that allows communicat
 2. Perform network address translation for instances that were assigned public IPv4 addresses.
 
 To make a subnet public, you attach an internet gateway to your VPC and add a route entry to the route table associated with the subnet.
+<img width="840" height="464" alt="image" src="https://github.com/user-attachments/assets/f4dc1985-29ff-423d-b7cc-c0bd5b8fac5c" />
+
 
 ### **Network Address Translation (NAT) Gateway**
 
@@ -136,12 +150,17 @@ Enables instances in a private subnet to connect to the internet or other AWS se
 2. Specify an elastic IP address to associate with the NAT Gateway when you create it.
 
 After you create a NAT Gateway, you must update the route table that is associated with one or more of your private subnets to point internet-bound traffic to the NAT gateway. This allows instances in your private subnets to communicate with the internet.
+<img width="1623" height="821" alt="image" src="https://github.com/user-attachments/assets/34c8867a-6053-4576-9e72-6f8e98ceae8c" />
+
 
 ### **VPC Sharing**
 
 Enables customers to share subnets with other AWS accounts in the same organization. VPC Sharing enables multiple AWS accounts to create their application resources in a shared, centrally managed VPC.
 
 The account that owns the VPC shares one or more subnets with other accounts, called participants, that belong to the same organization. After a subnet is shared, participants can view, create, modify, and delete their application resources in the subnets that are shared with them.
+<img width="1130" height="631" alt="image" src="https://github.com/user-attachments/assets/ff448631-a879-4a84-ad9b-c78e5f2b9042" />
+
+
 
 ### **VPC Peering**
 
@@ -152,10 +171,15 @@ When you set up the VPC peering connection, you create rules in your route table
 - IP Spaces cannot overlap
 - Transitive peering (chaining VPC peering) is not supported
 - You can only have one peering resource between the same two VPCs
+<img width="1167" height="605" alt="image" src="https://github.com/user-attachments/assets/db76aebd-fb64-4800-9d95-2d46c8e4e8e1" />
+
+
+
 
 ### **AWS Direct Connect**
 
 Enables your to establish a dedicated private connection between your network and one of the direct connect locations. The private connection can increase bandwidth, throughput, and provide a more consistent network experience than internet-based or VPN connections.
+<img width="872" height="526" alt="image" src="https://github.com/user-attachments/assets/c71d8eee-bc40-4de7-956a-5068431d67b7" />
 
 ### **VPC Endpoints**
 
@@ -163,12 +187,15 @@ A virtual device that enables you to privately connect a VPC to supported AWS se
 
 1. Gateway endpoints that you specify as a target for a route in your route table to either S3 or DynamoDB
 2. Interface endpoints are powered by AWS PrivateLink. PrivateLink provides private connectivity between VPCs, AWS services, and on-premises applications.
+<img width="1108" height="616" alt="image" src="https://github.com/user-attachments/assets/2a9050d1-a85d-4a9b-a623-5bf3a7c18818" />
 
 ### **AWS Transit Gateway**
 
 A network transit hub that is used to interconnect virtual private clouds, on-premises networks, VPCs, Direct Connect gateways, and VPN connections to a transit gateway.
 
 The topology of a Transit Gateway is a hub and spoke which reduces the number of connections required, and the complexity to implement and maintain it.
+<img width="1393" height="765" alt="image" src="https://github.com/user-attachments/assets/3d79faab-59f3-49f8-8e83-cf616ad9561b" />
+
 
 [Activity: Label a Network Diagram](http://d8rg5deuq9171.cloudfront.net/handouts/Activities/Module%205%20Activity%20-%20Label%20network%20diagram.pdf)
 
@@ -184,6 +211,7 @@ The topology of a Transit Gateway is a hub and spoke which reduces the number of
 - Security groups are stateful - return traffic is automatically allowed, regardless of rules
 - You can specify allow rules, but not deny rules.
 - All rules are evaluated before the decision to allow traffic.
+<img width="1087" height="620" alt="image" src="https://github.com/user-attachments/assets/945ec4fd-171c-480b-80ca-a16b021795eb" />
 
 ### **Network Access Control Lists (ACLs)**
 
@@ -194,6 +222,10 @@ The topology of a Transit Gateway is a hub and spoke which reduces the number of
 - Customn network ACLs deny all inbound and outbound traffic until you add rules.
 - You can specify both allow and deny rules.
 - Rules are evaluated in number order, starting with the lowest number
+<img width="842" height="475" alt="image" src="https://github.com/user-attachments/assets/93b727ba-838c-4471-b761-50bf0ac70adc" />
+
+<img width="1874" height="620" alt="image" src="https://github.com/user-attachments/assets/dc41b186-e900-4899-bc55-5cf6f98a2074" />
+
 
 [Activity: Design a VPC](http://d8rg5deuq9171.cloudfront.net/handouts/Activities/Module%205%20Activity%20-%20Design%20a%20VPC.pdf)
 
@@ -225,6 +257,9 @@ The topology of a Transit Gateway is a hub and spoke which reduces the number of
 - Multivalue answer routing – Respond to DNS queries with up to eight healthy records selected at random
 
 <br/>
+
+<img width="1337" height="751" alt="image" src="https://github.com/user-attachments/assets/b42777a9-72ef-47ba-8376-a0c6f6974f4c" />
+
 
 ## Section 6: Amazon CloudFront
 
