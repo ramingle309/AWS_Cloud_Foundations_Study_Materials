@@ -71,6 +71,11 @@ These are the nine key decisions to make when you create an EC2 instance by usin
    - AMI choices:
      - Quick Start – Linux and Windows AMIs that are provided by AWS
      - My AMIs – Any AMIs that you created
+    
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/54ae9b6e-4791-458a-8553-926ca983cfb3" />
+
+
+
      - AWS Marketplace – Pre-configured templates from third parties
      - Community AMIs – AMIs shared by others; use at your own risk
 2. Select an Instance Type
@@ -87,23 +92,37 @@ These are the nine key decisions to make when you create an EC2 instance by usin
      - Storage optimized
      - Accelerated computing
    - Instance types offer family, generation, and size (Example - `t3.large`: Family - `T`, Generation - `3`, Size - `large`)
+
+<img width="1333" height="746" alt="image" src="https://github.com/user-attachments/assets/ed11c911-d2e7-481e-add9-bcf0032107b0" />
+<img width="1332" height="750" alt="image" src="https://github.com/user-attachments/assets/17c31b91-f265-44dd-a4fb-abc390da7c20" />
+
+
    - Networking Features
      - The network bandwidth (Gbps) varies by instance type.
      - To maximize networking and bandwidth performance of your instance type enable enhanced networking and if you have interdependent instances, launch them into a cluster placement group.
      - Enhanced networking types are supported on most instance types. Enhanced networking types:
        - Elastic Network Adapter (ENA): Supports network speeds of up to 100 Gbps.
        - Intel 82599 Virtual Function interface: Supports network speeds of up to 10 Gbps.
-3. Specify Network Settings
+4. Specify Network Settings
    - Where should the instance be deployed? Identify the VPC and optionally the subnet
    - Should a public IP addressbe automatically assigned?
    - You can have multiple networks, such as different ones for development, testing and production
-4. Attach IAM Role (optional)
+5. Attach IAM Role (optional)
    - Will software on the EC2 instance need to interact with other AWS services? If yes, attach an appropriate IAM Role. IAM Roles can be attached at any time, not just launch.
    - An AWS Identity and Access Management (IAM) role that is attached to an EC2 instance is kept in an instance profile.
-5. User Data Script (optional)
+6. User Data Script (optional)
    - Specify a user data script at instance launch. Use user data scripts to customize the runtime environment of your instance
    - Script executes the first time the instance starts
-6. Specify Storage
+  User Data scripts = automatic configuration setup
+They help you create fully configured, ready-to-use servers without manual work.
+ 
+ ⚙️ So yes — User Data helps you avoid repeatedly creating custom AMIs.
+Instead of:
+Creating AMI → launching → updating → creating another AMI
+You can:
+Launch base AMI → run User Data script → automatically set up your environment
+
+7. Specify Storage
    - Configure the root volume
    - Attach additional storage volumes(optional). For each volume, specify:
      - Disk Size (in GB)
@@ -120,16 +139,19 @@ These are the nine key decisions to make when you create an EC2 instance by usin
      - Other options for storage (not for the root volume)
        - Mount an Amazon Elastic File System (EFS) file system.
        - Connect to Amazon Simple Storage Service (S3).
-7. Add Tags
+<img width="1337" height="747" alt="image" src="https://github.com/user-attachments/assets/5431605f-e59f-4824-a9d9-92ddcfbc7a22" />
+
+      
+8. Add Tags
    - Consists of a key and an optional value.
    - Tagging is how you can attach metadata to an EC2 instance
    - Potential benefits: Filtering, automation, cost allocation, and access control.
-8. Security Group Settings
+9. Security Group Settings
    - A security group is a set of firewall rules that control traffic to the instance
    - When you launch an instance, you associate one or more security groups with it
    - Create rules that specify the source, which ports that network communications can use and the protocol (TPC, UDP, ICMP)
    - Modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group
-9. Identify or Create the Key Pair
+10. Identify or Create the Key Pair
    - At instance launch, you specify an existing key pair or create a new key pair
    - A key pair consists of a public key that AWS stores and a private key file that you store
    - It enables secure connections to the instance
