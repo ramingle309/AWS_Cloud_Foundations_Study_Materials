@@ -320,6 +320,8 @@ Amazon Elastic Kubernetes Service (Amazon EKS)
 
 ## Section 6: Introduction to Elastic Beanstalk
 
+<img width="1897" height="924" alt="image" src="https://github.com/user-attachments/assets/99bc4fb6-d031-4a33-9465-5ae869e5be44" />
+
 - An easy way to get web applications up and running
 - A managed service that automatically handles
   - Infrastructure provisioning and configuration
