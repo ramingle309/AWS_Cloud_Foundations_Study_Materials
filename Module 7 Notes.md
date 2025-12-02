@@ -15,6 +15,7 @@
 - Explain Amazon S3 Glacier
 - Identify the functionality in Amazon S3 Glacier
 - Differentiate between Amazon EBS, Amazon S3, Amazon EFS, and Amazon S3 Glacier
+<img width="1331" height="751" alt="image" src="https://github.com/user-attachments/assets/7ee847d1-cb93-4ccd-9f88-0ef0df7055b3" />
 
 <br/>
 
