@@ -235,6 +235,10 @@ Optimizing Over Time
 
 - How do you evaluate new services?
 
+
+<img width="1233" height="695" alt="image" src="https://github.com/user-attachments/assets/118ccd73-e763-40f2-ac9b-49b4b37d5a84" />
+
+
 <br/>
 
 ## Section 2: Reliability and Availability
