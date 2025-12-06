@@ -190,6 +190,12 @@ for all operations we have to use this methods:-
 <img width="1919" height="1038" alt="image" src="https://github.com/user-attachments/assets/89d0159a-0dd2-40ca-af24-3614319eb3d7" />
 
 
+image(:-
+for s3 our application must initiate the server side encryption
+
+there are 3 ways to enable the server side encryption
+<img width="1149" height="651" alt="image" src="https://github.com/user-attachments/assets/ec707c6e-ae25-468d-ba23-abb2a7f2d771" />
+
 
 <br/>
 
