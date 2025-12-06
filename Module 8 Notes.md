@@ -121,6 +121,9 @@ Multiple factors influence the cost of RDS
 - Works well for mobile, web, gaming, adtech, and Internet of Things (IoT) applications
 - Provides consistent, single-digit millisecond latency at any scale
 
+<img width="897" height="492" alt="image" src="https://github.com/user-attachments/assets/c1bba59a-8d5e-40e4-ba1a-f1e0c84179d4" />
+
+
 <br/>
 
 ## Section 3: Amazon Redshift
