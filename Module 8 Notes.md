@@ -148,3 +148,9 @@ Multiple factors influence the cost of RDS
 <br/>
 
 [Knowledge Check](https://www.aws.training/Details/Curriculum?transcriptid=-NscDQNnt0KwQEi-zYfB8Q2&id=43078#modules)
+
+
+<img width="1245" height="686" alt="image" src="https://github.com/user-attachments/assets/570ebae3-5743-441a-862f-60d7077e96c0" />
+<img width="1435" height="745" alt="image" src="https://github.com/user-attachments/assets/6a3e39e4-fae2-4648-86e6-22fd78122bdc" />
+<img width="1640" height="796" alt="image" src="https://github.com/user-attachments/assets/d3e0f41a-4c98-4f32-8de3-35eb44d98dff" />
+<img width="1573" height="706" alt="image" src="https://github.com/user-attachments/assets/e109be3c-2eac-43ea-9d86-3732b588257f" />
