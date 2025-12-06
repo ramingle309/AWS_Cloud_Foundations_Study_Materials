@@ -48,11 +48,22 @@ RDS is a managed service that sets up and operates a relational database in the 
 
 ### **RDS Features**
 
+<img width="1295" height="588" alt="image" src="https://github.com/user-attachments/assets/e23f2b5e-7835-4791-8af9-29235deed3c4" />
+
+
 The database instance is the basic building block of Amazon RDS. The DB instance is an isolated database environment that can contain multiple user created databases. When setting up the database, you pick an instance class and the type of storage you need for your database. You also need to specify which database engine to run: MySQL, Amazon Aurora, Microsoft SQL Server, PostgreSQL, MariaDB, or Oracle
 
 Amazon RDS allows you to configure your DB instance for high availability with a Multi-AZ (availability zone) deployment. When you configure a Multi-AZ deployment, RDS automatically generates a standby copy of the database instance in another availability zone within the same VPC. After seeding the database copy, transactions are synchronously replicated to the standby copy. If the main database instance fails in a Multi-AZ deployment, RDS automatically brings the standby database instance online as the new main instance.
 
 RDS also supports the creation of read replicas. Updates that are made to the source database instance are asynchronously copied to the read replica instance. You can reduce the load on your source DB instance by routing read queries from your applications to the read replica.
+
+<img width="1461" height="690" alt="image" src="https://github.com/user-attachments/assets/5f9c03b8-03e6-42c5-94a2-6f0dc302e5ae" />
+
+<img width="1456" height="679" alt="image" src="https://github.com/user-attachments/assets/a16e440c-c722-4087-a029-24a2942aee65" />
+
+
+
+<img width="1331" height="733" alt="image" src="https://github.com/user-attachments/assets/7bdd2847-5ad2-47d1-b6b9-40c9b1d3ab5d" />
 
 ### **Cost and Usage of RDS**
 
@@ -71,6 +82,9 @@ Do not use when:
 - Sharding due to high data size or throughput demands
 - Simple GET or PUT requests and queries that a NoSQL database can handle
 - Relational database management system (RDBMS) customization
+
+
+<img width="1740" height="839" alt="image" src="https://github.com/user-attachments/assets/9b4cbcf3-a28c-4977-8527-e48aef11c82a" />
 
 #### Billing
 
