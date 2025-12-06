@@ -133,6 +133,7 @@ Multiple factors influence the cost of RDS
 - Columnar storage and parallel processing architectures
 - Automatically and continuously monitors cluster
 - Encryption is built in
+<img width="1814" height="895" alt="image" src="https://github.com/user-attachments/assets/72bd795d-c95b-4e98-aaa0-9d9b5f2674e1" />
 
 <br/>
 
