@@ -141,10 +141,11 @@ You do not pay for
 - File storage in the AWS Cloud
 - Works well for big data and analytics, media processing workflows, content management, web serving, and home directories
 - Petabyte-scale, low-latency file system
-- Shared storage
+- **Shared storage** : multiple ec2 instances access the same(one) efs 
 - Elastic capacity
 - Supports Network File System (NFS) versions 4.0 and 4.1 (NFSv4)
 - Compatible with all Linux-based AMIs for Amazon EC2
+<img width="1910" height="1023" alt="image" src="https://github.com/user-attachments/assets/7a7a76e7-0ecb-4c50-a56b-010bbe23cb3e" />
 
 ### **EFS Implementation**
 
@@ -172,6 +173,23 @@ You do not pay for
   - Server-side encryption with [AES-256](https://www.solarwindsmsp.com/blog/aes-256-encryption-algorithm)
   - Control access with IAM
   - Manages your keys
+
+
+
+we create a vault and there we store the each item 
+every item has the unique id
+can specify the region where we what to locate the vault
+
+image state 
+only some task can be done using the aws console
+
+for all operations we have to use this methods:-
+<img width="994" height="558" alt="image" src="https://github.com/user-attachments/assets/4d99e432-4519-4b9c-b667-9a7632a9c894" />
+
+
+<img width="1919" height="1038" alt="image" src="https://github.com/user-attachments/assets/89d0159a-0dd2-40ca-af24-3614319eb3d7" />
+
+
 
 <br/>
 
