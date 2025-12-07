@@ -90,6 +90,11 @@ A listner is a process that check the connection request
 
 ---
 
+
+
+<img width="1405" height="633" alt="image" src="https://github.com/user-attachments/assets/222c08ef-835a-4582-a7d4-0017d2274442" />
+<img width="1601" height="661" alt="image" src="https://github.com/user-attachments/assets/883b7bc7-f558-43b9-bfd8-bffc9b9a608e" />
+
 <br/>
 
 [Lab: Scale and Load Balance Your Architecture](https://labs.vocareum.com/main) --- [Lab Instructions](https://labs.vocareum.com/main/main.php)
