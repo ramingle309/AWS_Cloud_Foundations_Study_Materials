@@ -80,6 +80,11 @@ A listner is a process that check the connection request
 - Provides several scaling options: Manual, scheduled, dynamic or on-demand, and predictive
 - An Auto Scaling group is a collection of EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management.
 - Scale out (launch instances), Scale in (terminate instances)
+<img width="1342" height="759" alt="image" src="https://github.com/user-attachments/assets/4c0280d8-8a6d-445a-904b-30587f18f022" />
+<img width="1316" height="727" alt="image" src="https://github.com/user-attachments/assets/4a0390ab-95b4-4fdc-b4d4-8707727b42b6" />
+<img width="1339" height="755" alt="image" src="https://github.com/user-attachments/assets/6aa4181d-14a4-4486-9041-b54a588bce28" />
+<img width="1887" height="993" alt="image" src="https://github.com/user-attachments/assets/2ea94da2-4446-4bb6-bc0a-ef14bf7a54c7" />
+<img width="1883" height="924" alt="image" src="https://github.com/user-attachments/assets/e079d661-b013-41ea-b973-761b6e70cc50" />
 
 <br/>
 
