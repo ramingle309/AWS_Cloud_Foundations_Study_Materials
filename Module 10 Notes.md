@@ -31,6 +31,13 @@ Elastic Load Balancing distributes incoming application or network traffic acros
 - With Application Load Balancers and Network Load Balancers, you register targets in target groups, and route traffic to the target groups.
 - With Classic Load Balancers, you register instances with the load balancer.
 
+A listner is a process that check the connection request
+<img width="1446" height="757" alt="image" src="https://github.com/user-attachments/assets/18a89d6a-3d97-403d-b92b-5e057583adae" />
+
+<img width="1166" height="584" alt="image" src="https://github.com/user-attachments/assets/ffd6b7ec-49c3-49e4-9f02-d876bf98751e" />
+
+<img width="1334" height="749" alt="image" src="https://github.com/user-attachments/assets/abc198d6-d8b3-4eb1-8195-db4b7b142480" />
+
 <br/>
 
 ## Section 2: Amazon CloudWatch
@@ -55,6 +62,11 @@ Elastic Load Balancing distributes incoming application or network traffic acros
   - Actions
 
 **Events:** Define rules to match changes in AWS environment and route these events to one or more target functions or streams for processing
+
+<img width="1337" height="750" alt="image" src="https://github.com/user-attachments/assets/cffb2ff5-e3b6-4a2b-9133-cc68368946a6" />
+
+<img width="828" height="469" alt="image" src="https://github.com/user-attachments/assets/3964e344-8319-4ef8-9a55-3141ef47ca45" />
+
 
 <br/>
 
